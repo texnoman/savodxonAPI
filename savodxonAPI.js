@@ -11,7 +11,7 @@ spellURL = 'https://savodxon.uz/api/check';
 suggestionsURL = 'https://savodxon.uz/api/suggestions';
 
 //Sizning domeningiz uchun maxsus yaratilgan API kaliti. Agar hali kalit yaratmagan bo'lsangiz, http://savodxon.uz/api.html sahifasida kalit yaratishingiz mumkin. Bu birlikni bo'sh qoldirish mumkin emas. Shuningdek, bir domenning kalitini boshqa domenda ishlatish ham mumkin emas.
-apiKey = 'ffb9be738d3dd7ea5bb49a21ddc842a4';
+apiKey = 'misoluchunkeltirilgankalit';
 
 //Tahrir oynasidan olingan matnni so'zlarga ajratib, serverga yuborib, tekshirilgan natijani qabul qiladigan funksiya
 checkWords = function(inputHtml) {
