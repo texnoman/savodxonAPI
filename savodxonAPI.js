@@ -37,12 +37,9 @@ checkWords = function(inputHtml) {
 		cache: false,
 		success: function(response){
 			//So'rovga javob olinganini tekshiramiz
-			console.log(response);
 			if (response.success) {
 				//Olingan javobda xato so'zlar ro'yxati mavjudligini tekshiramiz
 				if (response.errors) {
-					//Bu yerda foydalanuvchiga "Matnda aniqlangan xatolar ostiga chizib ajratildi" degan xabar ko'rsatiladi
-					console.log(response);
 					//Kiritilgan HTML da xato so'zlarni ajratib (ya'ni <error></error> tegga o'rab) qaytarish
 					var outputHtml = highLight(inputHtml, response.words);
 					return outputHtml;	
