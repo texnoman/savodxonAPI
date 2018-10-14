@@ -130,7 +130,7 @@ collectTexts = function(inputHtml) {
 	var allNodes = tempDiv.getElementsByTagName("*");
 	for (var key in allNodes) {
 		var el = allNodes[key];			
-		if (el.nodeName !== 'SCRIPT' && el.nodeName !== 'STYLE'){
+		if (el.nodeName !== 'SCRIPT' && el.nodeName !== 'STYLE' && el.nodeName !== 'PRE'){
 			var children = el.childNodes;
 			if (children !== undefined){
 				x = children.length; 
@@ -161,7 +161,7 @@ highLight = function(inputHtml, words){
 		var allNodes = tempDiv.getElementsByTagName("*");
 		for (var key in allNodes) {
 			var el = allNodes[key];
-			if (el.nodeName !== 'SCRIPT' && el.nodeName !== 'STYLE'){
+			if (el.nodeName !== 'SCRIPT' && el.nodeName !== 'STYLE' && el.nodeName !== 'PRE'){
 				var children = el.childNodes;
 				if (children !== undefined){
 					x = children.length;
